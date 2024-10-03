@@ -9,8 +9,1586 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<title>
+			ぼくらのまつもとデジタルマップ｜信州松本の若者がつくる、若者のためのデジタルマップ
+		</title>
+		<link
+			rel="stylesheet"
+			href="assets/css/lib/splide.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/style.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<script defer src="assets/js/vendor.js"></script>
+		<script defer src="assets/js/common.js"></script>
+		<script defer src="assets/js/home.js"></script>
 	</head>
-	<body>
-		<h1>私のAstroサイト</h1>
+	<body data-menu-open="false">
+		<div class="l-content">
+			<header class="p-header">
+				<div class="p-header__lead">
+					<h1 class="p-header__logo">
+						<img
+							src="assets/images/common/logo.svg"
+							width="637"
+							height="187"
+							alt="ぼくらのまつもとデジタルマップ"
+						/>
+					</h1>
+					<p class="p-header__lead__sub">
+						長野県松本市の若者向けデジタルマップ
+					</p>
+					<p class="p-header__lead__en u-en">
+						BOKURANO MATSUMOTO DIGITALMAP. <br />DIGITAL MAP FOR
+						YOUNG PEOPLE IN MATSUMOTO NAGANO.
+					</p>
+				</div>
+				<div class="p-header__navWrap js-fixHeaderTrigger">
+					<div class="p-header__nav">
+						<nav class="p-gNav">
+							<ul class="p-gNav__list">
+								<li class="p-gNavItem p-gNavItem--green u-en">
+									<a href="#">TOP</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--blue u-en">
+									<a href="#about">ABOUT</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--yellow u-en">
+									<a href="#content">CONTENT</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--pink u-en">
+									<a href="#information">INFORMATION</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--purple u-en">
+									<a href="#contact">CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+						<button
+							type="button"
+							class="u-en c-menuIcon js-toggleMenu"
+							aria-label="メニューを開く"
+							><span>menu</span></button
+						>
+					</div>
+				</div>
+				<div class="p-menu">
+					<button
+						type="button"
+						class="u-en c-menuIcon c-menuIcon--close js-toggleMenu"
+						aria-label="メニューを閉じる"><span>close</span></button
+					>
+					<nav class="p-menu__nav">
+						<ul>
+							<li class="p-menu__item p-menu__item--top">
+								<a class="js-toggleMenu" href="#">
+									<span class="p-menu__item__en u-en"
+										>TOP</span
+									>
+									<span class="p-menu__item__ja">トップ</span>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--about">
+								<a class="js-toggleMenu" href="#about">
+									<span class="p-menu__item__en u-en"
+										>ABOUT</span
+									>
+									<span class="p-menu__item__ja"
+										><span>ぼくらのまつもと</span><span
+											>デジタルマップとは</span
+										></span
+									>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--content">
+								<a class="js-toggleMenu" href="#content">
+									<span class="p-menu__item__en u-en"
+										>CONTENT</span
+									>
+									<span class="p-menu__item__ja"
+										>掲載コンテンツ</span
+									>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--information">
+								<a class="js-toggleMenu" href="#information">
+									<span class="p-menu__item__en u-en"
+										>INFORMATION</span
+									>
+									<span class="p-menu__item__ja"
+										>お知らせ</span
+									>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--contact">
+								<a class="js-toggleMenu" href="#contact">
+									<span class="p-menu__item__en u-en"
+										>CONTACT</span
+									>
+									<span class="p-menu__item__ja"
+										>お問い合わせ</span
+									>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="p-menuOvarlay js-toggleMenu"></div>
+			</header>
+			<main class="l-main">
+				<div class="l-main__content">
+					<div class="p-mv">
+						<span class="p-mv__sun"
+							><img
+								src="assets/images/common/sun.webp"
+								width="238"
+								height="238"
+								alt=""
+							/></span
+						>
+						<span
+							class="c-cloud p-mv__cloud1"
+							style="--duration:1.5s; --direction:alternate"
+						>
+							<img
+								src="assets/images/common/cloud1.webp"
+								width="197"
+								height="149"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-mv__cloud2"
+							style="--duration:1.5s; --direction:alternate-reverse"
+						>
+							<img
+								src="assets/images/common/cloud2.webp"
+								width="354"
+								height="230"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-mv__cloud3"
+							style="--duration:1.5s; --direction:alternate-reverse"
+						>
+							<img
+								src="assets/images/common/cloud3.webp"
+								width="502"
+								height="310"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-mv__cloud4"
+							style="--duration:1.5s; --direction:alternate"
+						>
+							<img
+								src="assets/images/common/cloud3.webp"
+								width="502"
+								height="310"
+								alt=""
+							/>
+						</span>
+						<div class="p-mv__sky1">
+							<img
+								src="assets/images/top/mv_sky1.webp"
+								width="742"
+								height="543"
+								alt=""
+							/>
+						</div>
+						<div class="p-mv__sky2">
+							<img
+								src="assets/images/top/mv_sky2.webp"
+								width="677"
+								height="487"
+								alt=""
+							/>
+						</div>
+						<div class="p-mv__demo">
+							<iframe
+								src="https://platinumaps.jp/maps/matsumoto-digital-map"
+								allow="geolocation"
+								style="border: 0; background-color: #fafafa; width: 100%; height: auto;"
+								loading="lazy"></iframe>
+						</div>
+						<div class="p-mv__more">
+							<a
+								href="https://platinumaps.jp/maps/matsumoto-digital-map"
+								rel="noopener noreferrer"
+								target="_blank"
+								><img
+									src="assets/images/top/mv_more.svg"
+									width="158"
+									height="158"
+									alt="使ってみる"
+								/></a>
+						</div>
+						<div class="p-mv__illustration">
+							<img
+								src="assets/images/top/mv_illustration.webp"
+								width="2295"
+								height="2295"
+								alt=""
+							/>
+						</div>
+						<div class="p-mv__illustrationBg"></div>
+					</div>
+					<section id="about" class="p-about">
+						<div class="p-about__content">
+							<div class="p-about__youthArea">
+								<div class="p-about__youth">
+									<div
+										class="p-about__youth__boyTalk c-talk c-talk--mini u-en"
+										aria-hidden="true"
+										style="--duration:40s"
+										data-talk-text="Let's play in Matsumoto!!  "
+									>
+									</div>
+									<div
+										class="p-about__youth__girlTalk c-talk c-talk--mini c-talk--mini--type2 u-en"
+										aria-hidden="true"
+										style="--duration:30s"
+										data-talk-text="Lots of fun places!!  "
+									>
+									</div>
+									<img
+										src="assets/images/top/youth.webp"
+										width="301"
+										height="452"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="p-about__alphabet js-alphabet">
+								<p>
+									<img
+										src="assets/images/top/bokurano_text.webp"
+										width="4492"
+										height="147"
+										alt=""
+									/>
+								</p>
+							</div>
+							<div
+								class="c-talk u-en"
+								aria-hidden="true"
+								style="--duration:30s"
+								data-talk-text="Let's go out to matsumoto!!  "
+							>
+							</div>
+							<div class="p-txtBlock u-layout">
+								<div class="p-txtBlock__inner">
+									<p class="p-txtBlock__sub">
+										長野県松本市で若者向けのデジタルマップ！
+									</p>
+									<h2 class="p-txtBlock__ttl">
+										<span>まつもとの情報を</span><span
+											>いつもポケットに！</span>
+									</h2>
+									<p class="p-txtBlock__desc">
+										まちの様々な情報を若者目線で集め、<br
+											class="u-sp"
+										/>リアルタイムで表示する。<br
+										/>若者はもちろん、利用者全員が気軽かつ直感的に<br
+											class="u-sp"
+										/>まちの情報にアクセスでき、<br
+										/>まちに出かけてみたくなるマップ。<br
+										/>そんな、「あったらいいな、こんなマップ！」を<br
+											class="u-sp"
+										/>みなさんと一緒につくっていきます！
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="p-manage js-manage">
+						<div class="p-manage__kv">
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--wifi js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_wifi.png"
+									width="140"
+									height="155"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--coupon js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_coupon.png"
+									width="167"
+									height="186"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--bus js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_bus.png"
+									width="193"
+									height="213"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--town js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_town.png"
+									width="257"
+									height="284"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--bicycle js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_bicycle.png"
+									width="151"
+									height="167"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--parco js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_parco.png"
+									width="204"
+									height="226"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--blue1 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_blue1.png"
+									width="50"
+									height="56"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--yellow1 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_yellow1.png"
+									width="65"
+									height="71"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--pink1 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_pink1.png"
+									width="49"
+									height="54"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--pink2 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_pink2.png"
+									width="49"
+									height="54"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--green1 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_green1.png"
+									width="51"
+									height="55"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--yellow2 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_yellow2.png"
+									width="51"
+									height="55"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--blue2 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_blue2.png"
+									width="50"
+									height="56"
+									alt=""
+								/></span
+							>
+							<span
+								class="p-manage__kv__icon p-manage__kv__icon--green2 js-manage-pin"
+								><img
+									src="assets/images/top/manage_icon_green2.png"
+									width="51"
+									height="55"
+									alt=""
+								/></span
+							>
+							<div class="p-manage__kv__slide js-manage-kv">
+								<ul class="p-manage__kv__slide__list">
+									<li
+										class="p-manage__kv__slide__item js-kvSlide"
+									>
+										<img
+											src="assets/images/dammy1.webp"
+											width="445"
+											height="445"
+											alt=""
+										/>
+									</li>
+									<li
+										class="p-manage__kv__slide__item js-kvSlide"
+									>
+										<img
+											src="assets/images/dammy2.webp"
+											width="445"
+											height="445"
+											alt=""
+										/>
+									</li>
+									<li
+										class="p-manage__kv__slide__item js-kvSlide"
+									>
+										<img
+											src="assets/images/dammy3.webp"
+											width="445"
+											height="445"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+							<div class="p-manage__kv__pic1 js-manage-pin">
+								<div class="p-manage__kv__pic1__item">
+									<img
+										src="assets/images/top/manage_kv_pic1.webp"
+										width="142"
+										height="142"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="p-manage__kv__pic2 js-manage-pin">
+								<div class="p-manage__kv__pic2__item">
+									<img
+										src="assets/images/top/manage_kv_pic2.webp"
+										width="142"
+										height="142"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="p-txtBlock u-layout">
+							<div class="p-txtBlock__inner">
+								<p class="p-txtBlock__sub">
+									まつもと若者デジタルマップ制作委員会
+								</p>
+								<h2 class="p-txtBlock__ttl">
+									<span>つくるのは、</span><span
+										>まつもとの学生たち！</span>
+								</h2>
+								<p class="p-txtBlock__desc">
+									デジタルマップの作成・運営を行うのは、<br
+									/>ほとんどが松本市に住む大学生です。<br
+									/>若者の「知りたい！」をまとめたデジタルマップを作り、<br
+									/>若者がまちに出るハードルを下げようと立ち上がったのが、<br
+									/>私たち「まつもと若者デジタルマップ制作委員会」です。<br
+									/>デジタルマップを通してまちの情報を発信することで、<br
+									/>松本を若者が溢れるまちにします！
+								</p>
+							</div>
+						</div>
+					</section>
+					<section id="content" class="p-content">
+						<h2 class="p-content__ttl u-en">CONTENT</h2>
+						<span class="p-content__sun"
+							><img
+								src="assets/images/common/sun.webp"
+								width="238"
+								height="238"
+								alt=""
+							/></span
+						>
+						<span
+							class="c-cloud p-content__cloud1"
+							style="--duration:1.5s; --direction:alternate"
+						>
+							<img
+								src="assets/images/common/cloud1.webp"
+								width="197"
+								height="149"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-content__cloud2"
+							style="--duration:1.5s; --direction:alternate-reverse"
+						>
+							<img
+								src="assets/images/common/cloud2.webp"
+								width="354"
+								height="230"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-content__cloud3"
+							style="--duration:1.5s; --direction:alternate"
+						>
+							<img
+								src="assets/images/common/cloud4.webp"
+								width="502"
+								height="310"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-content__cloud4"
+							style="--duration:1.5s; --direction:alternate-reverse"
+						>
+							<img
+								src="assets/images/common/cloud3.webp"
+								width="502"
+								height="310"
+								alt=""
+							/>
+						</span>
+						<div class="p-content__sky1">
+							<img
+								src="assets/images/top/content_sky1.webp"
+								width="677"
+								height="487"
+								alt=""
+							/>
+						</div>
+						<div class="p-content__sky2">
+							<img
+								src="assets/images/top/content_sky2.webp"
+								width="677"
+								height="487"
+								alt=""
+							/>
+						</div>
+						<div class="p-content__list splide">
+							<div class="p-content__list__track splide__track">
+								<ul class="splide__list">
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=kaerupa"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_kaerupa.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content1.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													学割カエルパ！
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													kaerupa
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=seeing"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_seeing.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content2.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													観光
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													seeing
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=shopping"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_shopping.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content3.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													買い物
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													shopping
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=eat"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_eat.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content4.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													食事
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													eat
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=experience"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_experience.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content5.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													体験
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													experience
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=stay"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_stay.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content6.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													宿泊
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													stay
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=recommend"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_recommend.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content7.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													メンバーおすすめ
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													recommend
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+									<li class="c-contentCard splide__slide">
+										<a
+											class="c-hvScale"
+											href="https://platinumaps.jp/maps/matsumoto-digital-map?category=others"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<span class="c-contentCard__icon"
+												><img
+													src="assets/images/common/content_icon_others.png"
+													width="142"
+													height="158"
+													alt=""
+												/></span
+											>
+											<figure
+												class="c-contentCard__thumb"
+											>
+												<img
+													class="c-hvScale__trg"
+													src="assets/images/dammy_content8.webp"
+													loading="lazy"
+													width="290"
+													height="440"
+													alt=""
+												/>
+											</figure>
+											<div class="c-contentCard__summary">
+												<h3 class="c-contentCard__ttl">
+													その他
+												</h3>
+												<p
+													class="c-contentCard__en u-en"
+												>
+													others
+												</p>
+												<p class="c-contentCard__desc">
+													説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+												</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<ul class="splide__pagination"></ul>
+						</div>
+					</section>
+					<div class="p-homeTown">
+						<div class="p-town">
+							<div class="p-town__talk">
+								<div
+									class="c-talk u-en"
+									aria-hidden="true"
+									style="--duration:30s"
+									data-talk-text="LET'S GO OUT TO MATSUMOTO!!  "
+								>
+								</div>
+							</div>
+							<span
+								class="c-cloud p-town__cloud1"
+								style="--duration:1.5s; --direction:alternate"
+							>
+								<img
+									src="assets/images/common/cloud1.webp"
+									width="197"
+									height="149"
+									alt=""
+								/>
+							</span>
+							<span
+								class="c-cloud p-town__cloud2"
+								style="--duration:1.5s; --direction:alternate"
+							>
+								<img
+									src="assets/images/common/cloud2.webp"
+									width="354"
+									height="230"
+									alt=""
+								/>
+							</span>
+							<span
+								class="c-cloud p-town__cloud3"
+								style="--duration:1.5s; --direction:alternate-reverse"
+							>
+								<img
+									src="assets/images/common/cloud4.webp"
+									width="502"
+									height="310"
+									alt=""
+								/>
+							</span>
+							<span
+								class="c-cloud p-town__cloud4"
+								style="--duration:1.5s; --direction:alternate-reverse"
+							>
+								<img
+									src="assets/images/common/cloud3.webp"
+									width="502"
+									height="310"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--bicycle"
+								style="--duration:30s;--delay:0s"
+							>
+								<img
+									src="assets/images/common/bicycle.png"
+									width="30"
+									height="30"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--bicycle"
+								style="--duration:30s;--delay:10s"
+							>
+								<img
+									src="assets/images/common/bicycle.png"
+									width="30"
+									height="30"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--bicycle"
+								style="--duration:30s;--delay:20s"
+							>
+								<img
+									src="assets/images/common/bicycle.png"
+									width="30"
+									height="30"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--car"
+								style="--duration:20s;--delay:0s"
+							>
+								<img
+									src="assets/images/common/car-yellow.png"
+									width="88"
+									height="59"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--bus"
+								style="--duration:20s;--delay:-5s"
+							>
+								<img
+									src="assets/images/common/bus1.png"
+									width="138"
+									height="78"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--car"
+								style="--duration:20s;--delay:-10s"
+							>
+								<img
+									src="assets/images/common/car-green.png"
+									width="88"
+									height="59"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--car"
+								style="--duration:20s;--delay:-15s"
+							>
+								<img
+									src="assets/images/common/car-pink.png"
+									width="88"
+									height="59"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--bus p-town__item--under"
+								style="--duration:18s;--delay:2.5s"
+							>
+								<img
+									src="assets/images/common/bus2.png"
+									width="88"
+									height="59"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--car p-town__item--under"
+								style="--duration:18s;--delay:-2.5s"
+							>
+								<img
+									src="assets/images/common/car-orange.png"
+									width="88"
+									height="59"
+									alt=""
+								/>
+							</span>
+							<span
+								class="p-town__item p-town__item--car p-town__item--under"
+								style="--duration:18s;--delay:-7.5s"
+							>
+								<img
+									src="assets/images/common/car-blue.png"
+									width="88"
+									height="59"
+									alt=""
+								/>
+							</span>
+						</div>
+					</div>
+					<section id="information" class="p-info l-section">
+						<div class="c-secTtl">
+							<p class="u-secTtlEn u-en">INFORMATION</p>
+							<h2 class="c-secTtl__ttl">お知らせ</h2>
+						</div>
+						<div class="p-infoList">
+							<ul class="p-infoList__list">
+								<li class="c-infoCard">
+									<a class="c-hvScale" href="#link">
+										<div class="c-infoCard__head">
+											<span class="c-tag c-tag--pink u-en"
+												><span>EVENT</span></span
+											>
+											<div class="c-infoCard__thumb">
+												<figure
+													class="c-infoCard__thumb__pic"
+												>
+													<img
+														class="c-hvScale__trg"
+														src="assets/images/dammy_info1.webp"
+														loading="lazy"
+														width="290"
+														height="440"
+														alt=""
+													/>
+												</figure>
+											</div>
+										</div>
+										<div class="c-infoCard__summary">
+											<time
+												class="c-infoCard__time u-en"
+												datetime="2024-01-01"
+												>2024.01.01</time
+											>
+											<h3 class="c-infoCard__ttl">
+												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
+											</h3>
+										</div>
+									</a>
+								</li>
+								<li class="c-infoCard">
+									<a class="c-hvScale" href="#link">
+										<div class="c-infoCard__head">
+											<span
+												class="c-tag c-tag--yellow u-en"
+												><span>EVENT</span></span
+											>
+											<div class="c-infoCard__thumb">
+												<figure
+													class="c-infoCard__thumb__pic"
+												>
+													<img
+														class="c-hvScale__trg"
+														src="assets/images/dammy_info2.webp"
+														loading="lazy"
+														width="290"
+														height="440"
+														alt=""
+													/>
+												</figure>
+											</div>
+										</div>
+										<div class="c-infoCard__summary">
+											<time
+												class="c-infoCard__time u-en"
+												datetime="2024-01-01"
+												>2024.01.01</time
+											>
+											<h3 class="c-infoCard__ttl">
+												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
+											</h3>
+										</div>
+									</a>
+								</li>
+								<li class="c-infoCard">
+									<a class="c-hvScale" href="#link">
+										<div class="c-infoCard__head">
+											<span
+												class="c-tag c-tag--green u-en"
+												><span>EVENT</span></span
+											>
+											<div class="c-infoCard__thumb">
+												<figure
+													class="c-infoCard__thumb__pic"
+												>
+													<img
+														class="c-hvScale__trg"
+														src="assets/images/dammy_info3.webp"
+														loading="lazy"
+														width="290"
+														height="440"
+														alt=""
+													/>
+												</figure>
+											</div>
+										</div>
+										<div class="c-infoCard__summary">
+											<time
+												class="c-infoCard__time u-en"
+												datetime="2024-01-01"
+												>2024.01.01</time
+											>
+											<h3 class="c-infoCard__ttl">
+												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
+											</h3>
+										</div>
+									</a>
+								</li>
+								<li class="c-infoCard">
+									<a class="c-hvScale" href="#link">
+										<div class="c-infoCard__head">
+											<span class="c-tag c-tag--blue u-en"
+												><span>EVENT</span></span
+											>
+											<div class="c-infoCard__thumb">
+												<figure
+													class="c-infoCard__thumb__pic"
+												>
+													<img
+														class="c-hvScale__trg"
+														src="assets/images/dammy_info4.webp"
+														loading="lazy"
+														width="290"
+														height="440"
+														alt=""
+													/>
+												</figure>
+											</div>
+										</div>
+										<div class="c-infoCard__summary">
+											<time
+												class="c-infoCard__time u-en"
+												datetime="2024-01-01"
+												>2024.01.01</time
+											>
+											<h3 class="c-infoCard__ttl">
+												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
+											</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+				<section id="contact" class="l-section p-contact">
+					<div class="p-contact__content">
+						<div class="p-contact__head">
+							<div class="p-contact__item">
+								<span class="p-contact__item__sky"
+									><img
+										src="assets/images/top/contact_sky.png"
+										width="546"
+										height="400"
+										alt=""
+									/></span
+								>
+								<span class="p-contact__item__sun"
+									><img
+										src="assets/images/top/contact_sun.png"
+										width="86"
+										height="87"
+										alt=""
+									/></span
+								>
+								<span
+									class="c-cloud p-contact__item__cloud1"
+									style="--duration:1.5s; --direction:alternate"
+								>
+									<img
+										src="assets/images/top/contact_cloud1.png"
+										width="146"
+										height="94"
+										alt=""
+									/>
+								</span>
+								<span
+									class="c-cloud p-contact__item__cloud2"
+									style="--duration:1.5s; --direction:alternate-reverse"
+								>
+									<img
+										src="assets/images/top/contact_cloud2.png"
+										width="85"
+										height="45"
+										alt=""
+									/>
+								</span>
+								<span class="p-contact__item__building"
+									><img
+										src="assets/images/top/contact_item_building.png"
+										width="591"
+										height="372"
+										alt=""
+									/></span
+								>
+								<span class="p-contact__item__plane"
+									><img
+										src="assets/images/top/contact_item_plane.png"
+										width="188"
+										height="132"
+										alt=""
+									/></span
+								>
+								<span class="p-contact__item__mail"
+									><img
+										src="assets/images/top/contact_item_mail.png"
+										width="141"
+										height="156"
+										alt=""
+									/></span
+								>
+							</div>
+							<div class="c-secTtl">
+								<p class="u-secTtlEn u-en">CONTACT</p>
+								<h2 class="c-secTtl__ttl">お問い合わせ</h2>
+							</div>
+							<p class="p-contact__lead">
+								<span
+									>ぼくらのまつもとデジタルマップに関する</span
+								><span
+									>お問い合わせはフォームよりお寄せください。</span>
+							</p>
+						</div>
+						<div class="p-contact__form">
+							<form action="">
+								<dl class="p-formArea">
+									<div class="p-formItem">
+										<dt class="p-formItem__name">
+											お名前 <span
+												class="p-formItem__required"
+												>※必須</span>
+										</dt>
+										<dd class="p-formItem__input">
+											<input
+												class="c-textarea"
+												type="text"
+												placeholder="山田太郎"
+											/>
+										</dd>
+									</div>
+									<div class="p-formItem">
+										<dt class="p-formItem__name">
+											フリガナ <span
+												class="p-formItem__required"
+												>※必須</span>
+										</dt>
+										<dd class="p-formItem__input">
+											<ul class="p-formItem__errs">
+												<li class="u-errTxt">
+													※エラー文言は入りますエラー文言は入ります
+												</li>
+											</ul>
+											<input
+												class="c-textarea"
+												type="text"
+												placeholder="ヤマダタロウ"
+											/>
+										</dd>
+									</div>
+									<div class="p-formItem">
+										<dt class="p-formItem__name">
+											メールアドレス <span
+												class="p-formItem__required"
+												>※必須</span>
+										</dt>
+										<dd class="p-formItem__input">
+											<input
+												class="c-textarea"
+												type="email"
+												placeholder="メールアドレス"
+											/>
+										</dd>
+									</div>
+									<div class="p-formItem">
+										<dt class="p-formItem__name">
+											お問い合わせ内容 <span
+												class="p-formItem__required"
+												>※必須</span>
+										</dt>
+										<dd class="p-formItem__input">
+											<textarea
+												class="c-input"
+												name=""
+												id=""></textarea>
+										</dd>
+									</div>
+								</dl>
+								<div class="c-btn">
+									<button type="submit"
+										><span>送信する</span></button
+									>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer class="p-footer">
+			<section class="p-thanks">
+				<div class="p-thanks__head u-layout">
+					<h2 class="p-thanks__ttl u-secTtlEn u-en">THANKS</h2>
+					<p class="p-thanks__lead u-secLeadTxt">
+						<span>ぼくらのまつもとデジタルマップの制作は</span><span
+							>たくさんの方にご協力いただきました！</span
+						>
+					</p>
+				</div>
+				<div class="p-thanks__content">
+					<div class="p-thanks__slider splide js-thanksSlider">
+						<div class="p-thanks__list splide__track">
+							<ul class="splide__list">
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>山田太郎<span> さん</span></span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="p-thanks__slider splide js-thanksSlider">
+						<div class="p-thanks__list splide__track">
+							<ul class="splide__list">
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+								<li class="p-thanks__item splide__slide">
+									<span class="p-thanks__item__name"
+										>鈴木一郎<span> さん</span></span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="p-footer__content">
+				<div class="p-footer__logo">
+					<img
+						src="assets/images/common/logo-center.svg"
+						width="608"
+						height="180"
+						alt="ぼくらのまつもとデジタルマップ"
+					/>
+				</div>
+				<span class="p-footer__sun"
+					><img
+						src="assets/images/common/sun.webp"
+						width="238"
+						height="238"
+						alt=""
+					/></span
+				>
+				<span
+					class="c-cloud p-footer__cloud1"
+					style="--duration:1.5s; --direction:alternate"
+				>
+					<img
+						src="assets/images/common/cloud1.webp"
+						width="197"
+						height="149"
+						alt=""
+					/>
+				</span>
+				<span
+					class="c-cloud p-footer__cloud2"
+					style="--duration:1.5s; --direction:alternate-reverse"
+				>
+					<img
+						src="assets/images/common/cloud2.webp"
+						width="354"
+						height="230"
+						alt=""
+					/>
+				</span>
+				<span
+					class="c-cloud p-footer__cloud3"
+					style="--duration:1.5s; --direction:alternate-reverse"
+				>
+					<img
+						src="assets/images/common/cloud3.webp"
+						width="502"
+						height="310"
+						alt=""
+					/>
+				</span>
+				<span
+					class="c-cloud p-footer__cloud4"
+					style="--duration:1.5s; --direction:alternate"
+				>
+					<img
+						src="assets/images/common/cloud4.webp"
+						width="150"
+						height="80"
+						alt=""
+					/>
+				</span>
+				<div class="p-footer__item">
+					<img
+						src="assets/images/common/footer_item.webp"
+						width="3073"
+						height="278"
+						alt=""
+					/>
+				</div>
+				<small class="p-footer__copyright u-en"
+					>© BOKURANO MATSUMOTO DIGITALMAP</small
+				>
+			</div>
+		</footer>
 	</body>
 </html>
