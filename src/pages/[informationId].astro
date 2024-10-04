@@ -2,19 +2,23 @@
 import BaseLayout from "../layouts/BaseInformationLayout.astro";
 import { getInformation, getInformationDetail } from "../library/microcms";
 
-// 詳細記事ページの全パスを取得
+//詳細記事ページの全パスを取得
 export async function getStaticPaths() {
-    const response = await getInformation({ fields: ["id"] });
-    return response.contents.map((content: any) => ({
+    const apiResponse = await getInformation({ fields: ["id"] });
+    const information = apiResponse.contents;
+
+    return information.map((content: any) => ({
         params: {
             informationId: content.id,
         },
     }));
 }
 
-//記事の詳細情報を取得
+//設定したパスのパラメータから記事IDがセットされた変数を取得
 const { informationId } = Astro.params;
-const information = await getInformationDetail(informationId as string);
+
+//記事の詳細情報を取得
+const information: Information = await getInformationDetail(informationId as string);
 
 //日付のフォーマットを変更
 import dayjs from "dayjs";

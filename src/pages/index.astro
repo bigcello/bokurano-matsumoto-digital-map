@@ -4,7 +4,8 @@ const pageTitle =
 
 //microCMS呼び出し
 import { getInformation } from "../library/microcms";
-const response = await getInformation({ fields: ["id", "slug", "title", "publishedAt", "eyecatch", "category"] });
+const apiResponse = await getInformation({ fields: ["id", "title", "publishedAt", "eyecatch", "category"] });
+const information = apiResponse.contents;
 ---
 
 <html lang="en">
@@ -1106,7 +1107,7 @@ const response = await getInformation({ fields: ["id", "slug", "title", "publish
 						<div class="p-infoList">
 							<ul class="p-infoList__list">
 								{
-									response.contents.map((content: any) => (
+									apiResponse.contents.map((content: any) => (
 										<li class="c-infoCard">
 											<a
 												class="c-hvScale"
