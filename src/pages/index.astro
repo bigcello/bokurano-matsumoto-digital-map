@@ -1,5 +1,10 @@
 ---
+const pageTitle =
+	"ぼくらのまつもとデジタルマップ｜信州松本の若者がつくる、若者のためのデジタルマップ";
 
+//microCMS呼び出し
+import { getInformation } from "../library/microcms";
+const response = await getInformation({ fields: ["id", "slug", "title", "publishedAt", "eyecatch", "category"] });
 ---
 
 <html lang="en">
@@ -8,10 +13,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<title>
-			ぼくらのまつもとデジタルマップ｜信州松本の若者がつくる、若者のためのデジタルマップ
-		</title>
+		<title>{pageTitle}</title>
 		<link
 			rel="stylesheet"
 			href="/assets/css/lib/splide.min.css"
@@ -28,7 +30,7 @@
 		<script defer src="/assets/js/common.js"></script>
 		<script defer src="/assets/js/home.js"></script>
 	</head>
-	<body data-menu-open="false">
+	<body data-menu-open="false" class="pg-home">
 		<div class="l-content">
 			<header class="p-header">
 				<div class="p-header__lead">
@@ -45,7 +47,7 @@
 					</p>
 					<p class="p-header__lead__en u-en">
 						BOKURANO MATSUMOTO DIGITALMAP. <br />DIGITAL MAP FOR
-						YOUNG PEOPLE IN MATSUMOTO NAGANO.
+						YOUNG PEOPLE <br />IN MATSUMOTO NAGANO.
 					</p>
 				</div>
 				<div class="p-header__navWrap js-fixHeaderTrigger">
@@ -228,7 +230,8 @@
 									width="158"
 									height="158"
 									alt="使ってみる"
-								/></a>
+								/></a
+							>
 						</div>
 						<div class="p-mv__illustration">
 							<img
@@ -290,7 +293,8 @@
 									</p>
 									<h2 class="p-txtBlock__ttl">
 										<span>まつもとの情報を</span><span
-											>いつもポケットに！</span>
+											>いつもポケットに！</span
+										>
 									</h2>
 									<p class="p-txtBlock__desc">
 										まちの様々な情報を若者目線で集め、<br
@@ -498,11 +502,12 @@
 								</p>
 								<h2 class="p-txtBlock__ttl">
 									<span>つくるのは、</span><span
-										>まつもとの学生たち！</span>
+										>まつもとの若者たち！</span
+									>
 								</h2>
 								<p class="p-txtBlock__desc">
 									デジタルマップの作成・運営を行うのは、<br
-									/>ほとんどが松本市に住む大学生です。<br
+									/>松本市に住む学生や若手社会人たちです。<br
 									/>若者の「知りたい！」をまとめたデジタルマップを作り、<br
 									/>若者がまちに出るハードルを下げようと立ち上がったのが、<br
 									/>私たち「まつもと若者デジタルマップ制作委員会」です。<br
@@ -1100,140 +1105,45 @@
 						</div>
 						<div class="p-infoList">
 							<ul class="p-infoList__list">
-								<li class="c-infoCard">
-									<a class="c-hvScale" href="#link">
-										<div class="c-infoCard__head">
-											<span class="c-tag c-tag--pink u-en"
-												><span>EVENT</span></span
+								{
+									response.contents.map((content: any) => (
+										<li class="c-infoCard">
+											<a
+												class="c-hvScale"
+												href={content.id}
 											>
-											<div class="c-infoCard__thumb">
-												<figure
-													class="c-infoCard__thumb__pic"
-												>
-													<img
-														class="c-hvScale__trg"
-														src="/assets/images/dammy_info1.webp"
-														loading="lazy"
-														width="290"
-														height="440"
-														alt=""
-													/>
-												</figure>
-											</div>
-										</div>
-										<div class="c-infoCard__summary">
-											<time
-												class="c-infoCard__time u-en"
-												datetime="2024-01-01"
-												>2024.01.01</time
-											>
-											<h3 class="c-infoCard__ttl">
-												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
-											</h3>
-										</div>
-									</a>
-								</li>
-								<li class="c-infoCard">
-									<a class="c-hvScale" href="#link">
-										<div class="c-infoCard__head">
-											<span
-												class="c-tag c-tag--yellow u-en"
-												><span>EVENT</span></span
-											>
-											<div class="c-infoCard__thumb">
-												<figure
-													class="c-infoCard__thumb__pic"
-												>
-													<img
-														class="c-hvScale__trg"
-														src="/assets/images/dammy_info2.webp"
-														loading="lazy"
-														width="290"
-														height="440"
-														alt=""
-													/>
-												</figure>
-											</div>
-										</div>
-										<div class="c-infoCard__summary">
-											<time
-												class="c-infoCard__time u-en"
-												datetime="2024-01-01"
-												>2024.01.01</time
-											>
-											<h3 class="c-infoCard__ttl">
-												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
-											</h3>
-										</div>
-									</a>
-								</li>
-								<li class="c-infoCard">
-									<a class="c-hvScale" href="#link">
-										<div class="c-infoCard__head">
-											<span
-												class="c-tag c-tag--green u-en"
-												><span>EVENT</span></span
-											>
-											<div class="c-infoCard__thumb">
-												<figure
-													class="c-infoCard__thumb__pic"
-												>
-													<img
-														class="c-hvScale__trg"
-														src="/assets/images/dammy_info3.webp"
-														loading="lazy"
-														width="290"
-														height="440"
-														alt=""
-													/>
-												</figure>
-											</div>
-										</div>
-										<div class="c-infoCard__summary">
-											<time
-												class="c-infoCard__time u-en"
-												datetime="2024-01-01"
-												>2024.01.01</time
-											>
-											<h3 class="c-infoCard__ttl">
-												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
-											</h3>
-										</div>
-									</a>
-								</li>
-								<li class="c-infoCard">
-									<a class="c-hvScale" href="#link">
-										<div class="c-infoCard__head">
-											<span class="c-tag c-tag--blue u-en"
-												><span>EVENT</span></span
-											>
-											<div class="c-infoCard__thumb">
-												<figure
-													class="c-infoCard__thumb__pic"
-												>
-													<img
-														class="c-hvScale__trg"
-														src="/assets/images/dammy_info4.webp"
-														loading="lazy"
-														width="290"
-														height="440"
-														alt=""
-													/>
-												</figure>
-											</div>
-										</div>
-										<div class="c-infoCard__summary">
-											<time
-												class="c-infoCard__time u-en"
-												datetime="2024-01-01"
-												>2024.01.01</time
-											>
-											<h3 class="c-infoCard__ttl">
-												タイトルはいりますタイトルはいりますタイトルはいりますタイトルはいりますタイトルはいります
-											</h3>
-										</div>
-									</a>
-								</li>
+												<div class="c-infoCard__head">
+													<span class="c-tag c-tag--pink u-en">
+														<span>{content.category.name}</span>
+													</span>
+													<div class="c-infoCard__thumb">
+														<figure class="c-infoCard__thumb__pic">
+															<img
+																class="c-hvScale__trg"
+																src={content.eyecatch.url}
+																loading="lazy"
+																width="290"
+																height="440"
+																alt={content.title}
+															/>
+														</figure>
+													</div>
+												</div>
+												<div class="c-infoCard__summary">
+													<time
+														class="c-infoCard__time u-en"
+														datetime="2024-01-01"
+													>
+														2024.01.01
+													</time>
+													<h3 class="c-infoCard__ttl">
+														{content.title}
+													</h3>
+												</div>
+											</a>
+										</li>
+									))
+								}
 							</ul>
 						</div>
 					</section>
@@ -1313,17 +1223,22 @@
 								<span
 									>ぼくらのまつもとデジタルマップに関する</span
 								><span
-									>お問い合わせはフォームよりお寄せください。</span>
+									>お問い合わせはフォームよりお寄せください。</span
+								>
 							</p>
 						</div>
 						<div class="p-contact__form">
-							<form action="https://ssgform.com/s/290VaFv6rwqF" method="post">
+							<form
+								action="https://ssgform.com/s/290VaFv6rwqF"
+								method="post"
+							>
 								<dl class="p-formArea">
 									<div class="p-formItem">
 										<dt class="p-formItem__name">
 											お名前 <span
 												class="p-formItem__required"
-												>※必須</span>
+												>※必須</span
+											>
 										</dt>
 										<dd class="p-formItem__input">
 											<input
@@ -1339,7 +1254,8 @@
 										<dt class="p-formItem__name">
 											フリガナ <span
 												class="p-formItem__required"
-												>※必須</span>
+												>※必須</span
+											>
 										</dt>
 										<dd class="p-formItem__input">
 											<ul class="p-formItem__errs">
@@ -1360,7 +1276,8 @@
 										<dt class="p-formItem__name">
 											メールアドレス <span
 												class="p-formItem__required"
-												>※必須</span>
+												>※必須</span
+											>
 										</dt>
 										<dd class="p-formItem__input">
 											<input
@@ -1376,7 +1293,8 @@
 										<dt class="p-formItem__name">
 											お問い合わせ内容 <span
 												class="p-formItem__required"
-												>※必須</span>
+												>※必須</span
+											>
 										</dt>
 										<dd class="p-formItem__input">
 											<textarea
@@ -1403,8 +1321,9 @@
 				<div class="p-thanks__head u-layout">
 					<h2 class="p-thanks__ttl u-secTtlEn u-en">THANKS</h2>
 					<p class="p-thanks__lead u-secLeadTxt">
-						<span>デジタルマップの制作にあたり、</span><span>クラウドファンディングで</span><span
-							>たくさんの方にご協力いただきました！</span>
+						<span>デジタルマップの制作にあたり、</span><span
+							>クラウドファンディングで</span
+						><span>たくさんの方にご協力いただきました！</span>
 					</p>
 				</div>
 				<div class="p-thanks__content">
@@ -1413,17 +1332,23 @@
 							<ul class="splide__list">
 								<li class="p-thanks__item splide__slide">
 									<span class="p-thanks__item__name"
-										>合同会社なからいい<span> 様</span></span
+										>合同会社なからいい<span>
+											様</span
+										></span
 									>
 								</li>
 								<li class="p-thanks__item splide__slide">
 									<span class="p-thanks__item__name"
-										>株式会社パルコ 松本店<span> 様</span></span
+										>株式会社パルコ 松本店<span>
+											様</span
+										></span
 									>
 								</li>
 								<li class="p-thanks__item splide__slide">
 									<span class="p-thanks__item__name"
-										>おしゃれシニアの衣料品店コタケ<span> 様</span></span
+										>おしゃれシニアの衣料品店コタケ<span>
+											様</span
+										></span
 									>
 								</li>
 								<li class="p-thanks__item splide__slide">
@@ -1480,6 +1405,13 @@
 							</ul>
 						</div>
 					</div>
+					<p class="p-thanks__note u-layout">
+						<span
+							>こちらに掲載のお名前は、クラウドファンディングのリターンで</span
+						><span
+							>「Webサイトにお名前を掲載」を選択された方のお名前です。</span
+						><br />この他、50名近くの方にご支援をいただきました。
+					</p>
 				</div>
 			</section>
 			<div class="p-footer__content">

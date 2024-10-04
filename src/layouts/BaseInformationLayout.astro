@@ -1,0 +1,465 @@
+---
+const { pageTitle } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title><link
+			rel="stylesheet"
+			href="/assets/css/lib/splide.min.css"
+			type="text/css"
+			media="all"
+		/><link
+			rel="stylesheet"
+			href="/assets/css/style.min.css"
+			type="text/css"
+			media="all"
+		/><script defer src="/assets/js/vendor.js"></script>
+	</head>
+
+	<script defer src="/assets/js/common.js"></script>
+
+	<body data-menu-open="false" class="pg-detail">
+		<div class="l-content">
+			<header class="p-header">
+				<div class="p-header__lead">
+					<p class="p-header__logo">
+						<a href="/">
+							<img
+								src="/assets/images/common/logo.svg"
+								width="637"
+								height="187"
+								alt="ぼくらのまつもとデジタルマップ"
+							/>
+						</a>
+					</p>
+					<p class="p-header__lead__sub">
+						長野県松本市の若者向けデジタルマップ
+					</p>
+					<p class="p-header__lead__en u-en">
+						BOKURANO MATSUMOTO DIGITALMAP. <br />DIGITAL MAP FOR
+						YOUNG PEOPLE <br />IN MATSUMOTO NAGANO.
+					</p>
+				</div>
+				<div class="p-header__navWrap js-fixHeaderTrigger">
+					<div class="p-header__nav">
+						<nav class="p-gNav">
+							<ul class="p-gNav__list">
+								<li class="p-gNavItem p-gNavItem--green u-en">
+									<a href="/">TOP</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--blue u-en">
+									<a href="/#about">ABOUT</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--yellow u-en">
+									<a href="/#content">CONTENT</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--pink u-en">
+									<a href="/#information">INFORMATION</a>
+								</li>
+								<li class="p-gNavItem p-gNavItem--purple u-en">
+									<a href="/#contact">CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+						<button
+							type="button"
+							class="u-en c-menuIcon js-toggleMenu"
+							aria-label="メニューを開く"
+							><span>menu</span></button
+						>
+					</div>
+				</div>
+				<div class="p-menu">
+					<button
+						type="button"
+						class="u-en c-menuIcon c-menuIcon--close js-toggleMenu"
+						aria-label="メニューを閉じる"><span>close</span></button
+					>
+					<nav class="p-menu__nav">
+						<ul>
+							<li class="p-menu__item p-menu__item--top">
+								<a class="js-toggleMenu" href="./">
+									<span class="p-menu__item__en u-en"
+										>TOP</span
+									>
+									<span class="p-menu__item__ja">トップ</span>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--about">
+								<a class="js-toggleMenu" href="./#about">
+									<span class="p-menu__item__en u-en"
+										>ABOUT</span
+									>
+									<span class="p-menu__item__ja"
+										><span>ぼくらのまつもと</span><span
+											>デジタルマップとは</span
+										></span
+									>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--content">
+								<a class="js-toggleMenu" href="./#content">
+									<span class="p-menu__item__en u-en"
+										>CONTENT</span
+									>
+									<span class="p-menu__item__ja"
+										>掲載コンテンツ</span
+									>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--information">
+								<a class="js-toggleMenu" href="./#information">
+									<span class="p-menu__item__en u-en"
+										>INFORMATION</span
+									>
+									<span class="p-menu__item__ja"
+										>お知らせ</span
+									>
+								</a>
+							</li>
+							<li class="p-menu__item p-menu__item--contact">
+								<a class="js-toggleMenu" href="./#contact">
+									<span class="p-menu__item__en u-en"
+										>CONTACT</span
+									>
+									<span class="p-menu__item__ja"
+										>お問い合わせ</span
+									>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="p-menuOvarlay js-toggleMenu"></div>
+			</header>
+			<main class="l-main">
+				<div class="l-main__content">
+					<div class="p-pageMv">
+						<span class="p-pageMv__sun"
+							><img
+								src="/assets/images/common/sun.webp"
+								width="238"
+								height="238"
+								alt=""
+							/></span
+						>
+						<span
+							class="c-cloud p-pageMv__cloud1"
+							style="--duration:1.5s; --direction:alternate"
+						>
+							<img
+								src="/assets/images/common/cloud1.webp"
+								width="197"
+								height="149"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-pageMv__cloud2"
+							style="--duration:1.5s; --direction:alternate-reverse"
+						>
+							<img
+								src="/assets/images/common/cloud2.webp"
+								width="354"
+								height="230"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-pageMv__cloud3"
+							style="--duration:1.5s; --direction:alternate-reverse"
+						>
+							<img
+								src="/assets/images/common/cloud3.webp"
+								width="502"
+								height="310"
+								alt=""
+							/>
+						</span>
+						<span
+							class="c-cloud p-pageMv__cloud4"
+							style="--duration:1.5s; --direction:alternate"
+						>
+							<img
+								src="/assets/images/common/cloud3.webp"
+								width="502"
+								height="310"
+								alt=""
+							/>
+						</span>
+						<div class="p-pageMv__sky1">
+							<img
+								src="/assets/images/top/mv_sky1.webp"
+								width="742"
+								height="543"
+								alt=""
+							/>
+						</div>
+						<div class="p-pageMv__sky2">
+							<img
+								src="/assets/images/top/mv_sky2.webp"
+								width="677"
+								height="487"
+								alt=""
+							/>
+						</div>
+						<div class="p-pageMv__town">
+							<div class="p-town">
+								<div class="p-town__talk">
+									<div
+										class="c-talk u-en"
+										aria-hidden="true"
+										style="--duration:30s"
+										data-talk-text="LET'S GO OUT TO MATSUMOTO!!  "
+									>
+									</div>
+								</div>
+								<span
+									class="c-cloud p-town__cloud1"
+									style="--duration:1.5s; --direction:alternate"
+								>
+									<img
+										src="/assets/images/common/cloud1.webp"
+										width="197"
+										height="149"
+										alt=""
+									/>
+								</span>
+								<span
+									class="c-cloud p-town__cloud2"
+									style="--duration:1.5s; --direction:alternate"
+								>
+									<img
+										src="/assets/images/common/cloud2.webp"
+										width="354"
+										height="230"
+										alt=""
+									/>
+								</span>
+								<span
+									class="c-cloud p-town__cloud3"
+									style="--duration:1.5s; --direction:alternate-reverse"
+								>
+									<img
+										src="/assets/images/common/cloud4.webp"
+										width="502"
+										height="310"
+										alt=""
+									/>
+								</span>
+								<span
+									class="c-cloud p-town__cloud4"
+									style="--duration:1.5s; --direction:alternate-reverse"
+								>
+									<img
+										src="/assets/images/common/cloud3.webp"
+										width="502"
+										height="310"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--bicycle"
+									style="--duration:30s;--delay:0s"
+								>
+									<img
+										src="/assets/images/common/bicycle.png"
+										width="30"
+										height="30"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--bicycle"
+									style="--duration:30s;--delay:10s"
+								>
+									<img
+										src="/assets/images/common/bicycle.png"
+										width="30"
+										height="30"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--bicycle"
+									style="--duration:30s;--delay:20s"
+								>
+									<img
+										src="/assets/images/common/bicycle.png"
+										width="30"
+										height="30"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--car"
+									style="--duration:20s;--delay:0s"
+								>
+									<img
+										src="/assets/images/common/car-yellow.png"
+										width="88"
+										height="59"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--bus"
+									style="--duration:20s;--delay:-5s"
+								>
+									<img
+										src="/assets/images/common/bus1.png"
+										width="138"
+										height="78"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--car"
+									style="--duration:20s;--delay:-10s"
+								>
+									<img
+										src="/assets/images/common/car-green.png"
+										width="88"
+										height="59"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--car"
+									style="--duration:20s;--delay:-15s"
+								>
+									<img
+										src="/assets/images/common/car-pink.png"
+										width="88"
+										height="59"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--bus p-town__item--under"
+									style="--duration:18s;--delay:2.5s"
+								>
+									<img
+										src="/assets/images/common/bus2.png"
+										width="88"
+										height="59"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--car p-town__item--under"
+									style="--duration:18s;--delay:-2.5s"
+								>
+									<img
+										src="/assets/images/common/car-orange.png"
+										width="88"
+										height="59"
+										alt=""
+									/>
+								</span>
+								<span
+									class="p-town__item p-town__item--car p-town__item--under"
+									style="--duration:18s;--delay:-7.5s"
+								>
+									<img
+										src="/assets/images/common/car-blue.png"
+										width="88"
+										height="59"
+										alt=""
+									/>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="p-pageHead l-section">
+						<div class="c-secTtl">
+							<p class="u-secTtlEn u-en">INFORMATION</p>
+							<p class="c-secTtl__ttl">お知らせ</p>
+						</div>
+					</div>
+					<slot />
+				</div>
+			</main>
+		</div>
+		<footer class="p-footer">
+			<div class="p-footer__content">
+				<div class="p-footer__logo">
+					<img
+						src="/assets/images/common/logo-center.svg"
+						width="608"
+						height="180"
+						alt="ぼくらのまつもとデジタルマップ"
+					/>
+				</div>
+				<span class="p-footer__sun"
+					><img
+						src="/assets/images/common/sun.webp"
+						width="238"
+						height="238"
+						alt=""
+					/></span
+				>
+				<span
+					class="c-cloud p-footer__cloud1"
+					style="--duration:1.5s; --direction:alternate"
+				>
+					<img
+						src="/assets/images/common/cloud1.webp"
+						width="197"
+						height="149"
+						alt=""
+					/>
+				</span>
+				<span
+					class="c-cloud p-footer__cloud2"
+					style="--duration:1.5s; --direction:alternate-reverse"
+				>
+					<img
+						src="/assets/images/common/cloud2.webp"
+						width="354"
+						height="230"
+						alt=""
+					/>
+				</span>
+				<span
+					class="c-cloud p-footer__cloud3"
+					style="--duration:1.5s; --direction:alternate-reverse"
+				>
+					<img
+						src="/assets/images/common/cloud3.webp"
+						width="502"
+						height="310"
+						alt=""
+					/>
+				</span>
+				<span
+					class="c-cloud p-footer__cloud4"
+					style="--duration:1.5s; --direction:alternate"
+				>
+					<img
+						src="/assets/images/common/cloud4.webp"
+						width="150"
+						height="80"
+						alt=""
+					/>
+				</span>
+				<div class="p-footer__item">
+					<img
+						src="/assets/images/common/footer_item.webp"
+						width="3073"
+						height="278"
+						alt=""
+					/>
+				</div>
+				<small class="p-footer__copyright u-en"
+					>© BOKURANO MATSUMOTO DIGITALMAP</small
+				>
+			</div>
+		</footer>
+	</body>
+</html>

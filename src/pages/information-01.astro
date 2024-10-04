@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../layouts/BaseInformationLayout.astro";
+const pageTitle = "これがタイトルです。";
+const pubDate = "2024.10.01";
+const category = "EVENT"
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<article class="p-article l-section">
+		<div class="p-article__content">
+			<header class="p-article__header">
+				<div class="p-article__summary">
+					<span class="c-tag u-en"><span>{category}</span></span>
+					<time class="u-en" datetime="2024-01-01">{pubDate}</time>
+				</div>
+				<h1 class="p-article__ttl">{pageTitle}</h1>
+			</header>
+			<section class="p-article__body">
+				<figure>
+					<img
+						src="/assets/images/dammy_content7.webp"
+						loading="lazy"
+						width="1000"
+						height="667"
+						alt="イベント風景"
+					/>
+				</figure>
+				<h2>
+					h2タイトルh2タイトルh2タイトルh2タイトルh2タイトルh2タイトル
+				</h2>
+				<h3>
+					h3タイトルh3タイトルh3タイトルh3タイトルh3タイトルh3タイトル
+				</h3>
+				<h4>
+					h4タイトルh4タイトルh4タイトルh4タイトルh4タイトルh4タイトル
+				</h4>
+				<h5>
+					h5タイトルh5タイトルh5タイトルh5タイトルh5タイトルh5タイトル
+				</h5>
+				<h6>
+					h6タイトルh6タイトルh6タイトルh6タイトルh6タイトルh6タイトル
+				</h6>
+				<p>
+					通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります
+				</p>
+				<p>
+					通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります通常テキストはいります
+				</p>
+				<figure>
+					<img
+						src="/assets/images/dammy_content7.webp"
+						loading="lazy"
+						width="1000"
+						height="667"
+						alt="イベント風景"
+					/>
+				</figure>
+				<ul>
+					<li>リスト項目リスト項目リスト項目リスト項目リスト項目</li>
+					<li>リスト項目リスト項目リスト項目リスト項目リスト項目</li>
+					<li>リスト項目リスト項目リスト項目リスト項目リスト項目</li>
+				</ul>
+				<ol>
+					<li>リスト項目リスト項目リスト項目リスト項目リスト項目</li>
+					<li>リスト項目リスト項目リスト項目リスト項目リスト項目</li>
+					<li>リスト項目リスト項目リスト項目リスト項目リスト項目</li>
+				</ol>
+				<table>
+					<tr>
+						<th>見出し見出し</th>
+						<th>見出し見出し</th>
+					</tr>
+					<tr>
+						<th>見出し見出し見出し見出し見出し見出し</th>
+						<td
+							>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</td
+						>
+					</tr>
+					<tr>
+						<th>見出し見出し見出し見出し見出し見出し</th>
+						<td
+							>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</td
+						>
+					</tr>
+					<tr>
+						<th>見出し見出し見出し見出し見出し見出し</th>
+						<td
+							>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</td
+						>
+					</tr>
+				</table>
+				<div class="c-btn">
+					<a href="#"><span>ボタン</span></a>
+				</div>
+				<div class="c-btn c-btn--center">
+					<a href="#"><span>中央寄せボタン</span></a>
+				</div>
+				<div class="c-btn c-btn--right">
+					<a href="#"><span>ボタン</span></a>
+				</div>
+			</section>
+		</div>
+	</article>
+</BaseLayout>
