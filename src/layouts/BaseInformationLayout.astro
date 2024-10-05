@@ -22,11 +22,9 @@ const currentPath = Astro.url.pathname;
 			type="text/css"
 			media="all"
 		/><script defer src="/assets/js/vendor.js"></script>
+		<script defer src="/assets/js/common.js"></script>
 
-		<meta
-			property="og:url"
-			content={currentPath}
-		/>
+		<meta property="og:url" content={currentPath} />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content={pageTitle} />
 		<meta
