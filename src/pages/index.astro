@@ -4,7 +4,9 @@ const pageTitle =
 
 //microCMS呼び出し
 import { getInformation } from "../library/microcms";
-const apiResponse = await getInformation({ fields: ["id", "title", "publishedAt", "eyecatch", "category"] });
+const apiResponse = await getInformation({
+	fields: ["id", "title", "publishedAt", "eyecatch", "category", "createdAt"],
+});
 const information = apiResponse.contents;
 ---
 
@@ -1107,7 +1109,7 @@ const information = apiResponse.contents;
 						<div class="p-infoList">
 							<ul class="p-infoList__list">
 								{
-									apiResponse.contents.map((content: any) => (
+									information.map((content: any) => (
 										<li class="c-infoCard">
 											<a
 												class="c-hvScale"
@@ -1115,28 +1117,39 @@ const information = apiResponse.contents;
 											>
 												<div class="c-infoCard__head">
 													<span class="c-tag c-tag--pink u-en">
-														<span>{content.category.name}</span>
+														<span>
+															{
+																content.category
+																	.name
+															}
+														</span>
 													</span>
 													<div class="c-infoCard__thumb">
 														<figure class="c-infoCard__thumb__pic">
 															<img
 																class="c-hvScale__trg"
-																src={content.eyecatch.url}
+																src={
+																	content
+																		.eyecatch
+																		.url
+																}
 																loading="lazy"
 																width="290"
 																height="440"
-																alt={content.title}
+																alt={
+																	content.title
+																}
 															/>
 														</figure>
 													</div>
 												</div>
 												<div class="c-infoCard__summary">
-													<time
+													<!--<time
 														class="c-infoCard__time u-en"
 														datetime="2024-01-01"
 													>
-														2024.01.01
-													</time>
+														2024.10.01
+													</time>-->
 													<h3 class="c-infoCard__ttl">
 														{content.title}
 													</h3>
@@ -1259,11 +1272,6 @@ const information = apiResponse.contents;
 											>
 										</dt>
 										<dd class="p-formItem__input">
-											<ul class="p-formItem__errs">
-												<li class="u-errTxt">
-													※エラー文言は入りますエラー文言は入ります
-												</li>
-											</ul>
 											<input
 												class="c-textarea"
 												type="text"
