@@ -18,7 +18,9 @@ export async function getStaticPaths() {
 const { informationId } = Astro.params;
 
 //記事の詳細情報を取得
-const information: Information = await getInformationDetail(informationId as string);
+const information: Information = await getInformationDetail(
+    informationId as string,
+);
 
 //日付のフォーマットを変更
 import dayjs from "dayjs";
@@ -32,6 +34,10 @@ const date = dayjs
     .utc(information.publishedAt)
     .tz("Asia/Tokyo")
     .format("YYYY.MM.DD");
+
+//カテゴリー名をタグに挿入
+const category = information.category.id;
+const categoryClass = `c-tag u-en c-tag--${category}`;
 ---
 
 <BaseLayout pageTitle={information.title}>
@@ -39,7 +45,7 @@ const date = dayjs
         <div class="p-article__content">
             <header class="p-article__header">
                 <div class="p-article__summary">
-                    <span class="c-tag u-en"
+                    <span class={categoryClass}
                         ><span>{information.category.name}</span></span
                     >
                     <time class="u-en" datetime="2024-01-01">{date}</time>
