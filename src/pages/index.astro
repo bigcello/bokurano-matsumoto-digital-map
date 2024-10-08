@@ -41,7 +41,29 @@ const information = apiResponse.contents;
 		<meta property="og:site_name" content={pageTitle} />
 		<meta property="og:image" content="https://matsumoto.bokurano-digital-map.com/assets/images/common/ogp.png" />
 	</head>
-	<body data-menu-open="false" class="pg-home">
+	<body data-loading="true" data-menu-open="false" class="pg-home">
+		<div class="p-loading js-loading">
+			<div class="p-loading__content">
+				<p class="p-loading__logo"><img src="assets/images/common/logo-center.svg" width="608" height="180" alt=""></p>
+				<p class="u-en">LOADING<span>.</span><span>.</span><span>.</span></p>
+				<div class="p-loding__moveArea">
+					<span class="p-loading__plane1"><img src="assets/images/common/plane1.png" width="117" height="75" alt=""></span>
+					<span class="p-loading__plane2"><img src="assets/images/common/plane2.png" width="117" height="75" alt=""></span>
+					<span class="c-cloud p-loading__cloud1" style="--duration:1.5s; --direction:alternate">
+						<img src="assets/images/common/cloud1.webp" width="197" height="149" alt="">
+					</span>
+					<span class="c-cloud p-loading__cloud2" style="--duration:1.5s; --direction:alternate-reverse">
+						<img src="assets/images/common/cloud2.webp" width="354" height="230" alt="">
+					</span>
+					<span class="c-cloud p-loading__cloud3" style="--duration:1.5s; --direction:alternate">
+						<img src="assets/images/common/cloud3.webp" width="502" height="310" alt="">
+					</span>
+					<span class="c-cloud p-loading__cloud4" style="--duration:1.5s; --direction:alternate-reverse">
+						<img src="assets/images/common/cloud4.webp" width="502" height="310" alt="">
+					</span>
+				</div>
+			</div>
+		</div>
 		<div class="l-content">
 			<header class="p-header">
 				<div class="p-header__lead">
