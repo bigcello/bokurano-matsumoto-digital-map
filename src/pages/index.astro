@@ -41,6 +41,15 @@ const information = apiResponse.contents;
 		<meta property="og:site_name" content={pageTitle} />
 		<meta property="og:image" content="https://matsumoto.bokurano-digital-map.com/assets/images/common/ogp.png" />
 	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMLDY0Y2FL"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-XMLDY0Y2FL');
+	</script>
 	<body data-loading="true" data-menu-open="false" class="pg-home">
 		<div class="p-loading js-loading">
 			<div class="p-loading__content">
