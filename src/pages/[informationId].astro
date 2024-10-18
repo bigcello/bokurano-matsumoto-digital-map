@@ -37,7 +37,6 @@ const date = dayjs
 
 //カテゴリー名をタグに挿入
 const category = information.category.id;
-const categoryClass = `c-tag u-en c-tag--${category}`;
 ---
 
 <BaseLayout pageTitle={information.title}>
@@ -45,7 +44,7 @@ const categoryClass = `c-tag u-en c-tag--${category}`;
         <div class="p-article__content">
             <header class="p-article__header">
                 <div class="p-article__summary">
-                    <span class={categoryClass}
+                    <span class={`c-tag u-en c-tag--${category}`}
                         ><span>{information.category.name}</span></span
                     >
                     <time class="u-en" datetime="2024-01-01">{date}</time>

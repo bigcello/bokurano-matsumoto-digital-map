@@ -10,7 +10,7 @@ const apiResponse = await getInformation({
 const information = apiResponse.contents;
 ---
 
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
@@ -1155,7 +1155,7 @@ const information = apiResponse.contents;
 												href={content.id}
 											>
 												<div class="c-infoCard__head">
-													<span class="c-tag c-tag--pink u-en">
+													<span class={`c-tag u-en c-tag--pink c-tag--${content.category.id}`}>
 														<span>
 															{
 																content.category
